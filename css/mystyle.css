@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans 3", sans-serif;
+
+    h1, h2{
+        font-family: "Source Serif 4", serif;
+    }
+}
+
+.first-section{
+    height: 50%;
+    width: 100%;
+    background-color: #FEECE0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+
+    & h1{
+        color: #58190A;
+        font-weight: bold;
+        font-size: 72px;
+        text-align: left;
+        margin: 0px;
+    }
+
+    & h2{
+        color: #58190A;
+        font-weight: 400;
+        font-size: 38px;
+        text-align: left;
+        margin: 0px;
+    }
+
+    .inner-div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+
+        & div{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-content: center;
+        }
+
+        & p{
+            margin: 0px;
+            font-size: 35px;
+            color: #9B6647;
+            font-family: "Source Serif 4", serif;
+        }
+
+    }
+}
+
+.second-section{
+    height: 50%;
+    width: 100%;
+    background-color: #9B6647;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+
+    .instructions-title{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        gap: 10px;
+        align-items: center;
+        
+        & h2{
+            font-size: 38px;
+        }
+    }
+
+    & ol, ul{
+        color: white;
+        font-size: 28px;
+    }
+
+}
