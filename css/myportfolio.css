@@ -1,0 +1,69 @@
+body {
+    background-color: #000000;
+    overflow: visible;
+
+    h1, p{
+        color: #ffffff;
+    }
+
+    a {
+        background-color: #22D4FD;
+        border: 0;
+        border-radius: 16px;
+        padding: 16px;
+        font-family: "Montserrat", sans-serif;
+        color: #000000;
+        font-weight: 600;
+        font-size: 24px;
+        min-width: 280px;
+        margin: 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.15s ease-in-out color, 0.15s background-color;
+    }
+
+    a:hover{
+        color: #ffffff;
+        background-color: #003642;
+    }
+}
+
+h1 {
+    font-family: "Krona One", sans-serif;
+    font-size: 36px;
+    line-break: loose
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+.blue-text{
+    color: #22D4FD;
+}
+
+.main-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 58px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.text-holder{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
