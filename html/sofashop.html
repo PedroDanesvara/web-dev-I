@@ -11,15 +11,11 @@
 <body>
     <section class="main-container">
         <div class="img-holder">
-            <button>
-                <img src="..\src\360.svg" alt="360_button">
+            <button onclick="changeImage()">
+                <img id="visualization_button" src="..\src\360.svg" alt="360_button">
             </button>
             <p>
-                <img src="..\src\sofa.png" alt="sofa_image" class="sofa">
-                <!-- <picture>
-                    <source media="(min-width: 2000px)" srcset="..\src\sofa.gif">
-                    <img src="..\src\sofa.png" alt="sofa_image">
-                </picture> -->
+                <img id="sofa" src="..\src\sofa.png" alt="sofa_image" class="sofa">
             </p>
         </div>
 
@@ -32,5 +28,6 @@
             </button>
         </div>
     </section>
+    <script src="..\js\sofa_button_handle.js"></script>
 </body>
 </html>
