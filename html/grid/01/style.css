@@ -1,0 +1,27 @@
+.card-listing {
+	padding: .5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 200px 200px 100px;
+}
+
+.card {
+	background-color: #fcfae1;
+	font-family: Verdana, Helvetica, sans-serif;
+	padding: 1rem;
+	margin: 1rem 0.5rem;
+}
+
+.card h3 {
+	color: #ba0722;
+	margin: 0;
+}
+
+.card p {
+	margin: 0;
+}
+
+.c1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
