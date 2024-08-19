@@ -1,0 +1,32 @@
+body{
+    background-color: #121214;
+    padding: 140px 111px;
+    display: flex;
+    gap: 32px;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 60.05px;
+}
+
+.main-grid{
+    max-width: 50%;
+    height: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 32px; 
+    grid-template-areas: 
+    ". ."
+    ". ."; 
+}
+
+.artwork-1{
+    grid-area: 1 1 2 2;
+}
