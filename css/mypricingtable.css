@@ -1,0 +1,149 @@
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+i {
+    margin-right: 8px;
+}
+
+hr{
+    border: solid 1px #E2E8F0;
+    width: 100%;
+}
+
+button {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: all 0.25s ease-in-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: solid 1px #E2E8F0;
+    border-radius: 10px;
+    padding: 48px 32px 32px 32px;
+    width: 384px;
+    height: 454px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1E293B;
+    transition: border 0.25s ease-in-out;
+
+    & h2 {
+        font-size: 32px;
+    }
+
+    & div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.card:hover{
+    border-color: #996DFF;
+}
+
+
+.primary {
+    background-color: #0F172A;
+    color: #F8FAFC;
+
+    & hr {
+        border-color: #334155;
+    }
+}
+
+.disclaimer-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.disclaimer {
+    color: #7C3AED;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.description {
+    color: #475569;
+    font-weight: 400;
+}
+
+.primary_button {
+    padding: 16px 24px 16px 24px;
+    border: solid 1px #1E293B;
+    border-radius: 4px;
+    background-color: #996DFF;
+    color: #ffffff;
+}
+
+.primary_button:hover {
+    background-color: #7C3AED;
+}
+
+.secondary_button {
+    padding: 16px 24px 16px 24px;
+    border: solid 1px #1E293B;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #1E293B;
+}
+
+.secondary_button:hover {
+    background-color: #1E293B;
+    color: #ffffff;
+}
+
+.fa-circle-info  {
+    color: #475569;
+}
+
+.fa-check {
+    color: #1B873F;
+}
+
+.special-offer {
+    padding: 8px 16px;
+    background-color: #FBA94C;
+    border-radius: 6px;
+    color: #0F172A;
+    align-self: center;
+    position: relative;
+    bottom: 115%;
+
+    & p{
+        margin: 0px;
+    }
+
+    
+}
+
+.active {
+    color: #CBD5E1;
+}
+
+.icon-active {
+    color: #64748B;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        height: unset;
+    }
+}
