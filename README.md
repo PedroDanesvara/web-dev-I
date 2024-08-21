@@ -15,3 +15,7 @@ Login page: https://pedrodanesvara.github.io/web-dev-I/html/login.html
 Grid1 Page: https://pedrodanesvara.github.io/web-dev-I/html/grid1.html
 
 Grid2 Page: https://pedrodanesvara.github.io/web-dev-I/html/grid2.html
+
+Abstract Gallery Page: https://pedrodanesvara.github.io/web-dev-I/html/abstract_galery.html
+
+Pricing Table Page: https://pedrodanesvara.github.io/web-dev-I/html/pricing_table.html
