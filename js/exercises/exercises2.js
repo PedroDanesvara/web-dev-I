@@ -112,15 +112,96 @@ function removeAcento (text){
 
 
 //5. Escreva um programa que solicite ao usuário um número N e exiba todos os números primos menores que N.
+function printPrimeNumbers() {
+    const number = parseInt(prompt("Digite um número: "), 10);
+    const prime_numbers = createPrimeNumbersList(number);
+    console.log(`Números primos menores que ${number}: ${prime_numbers.join(", ")}`);
+}
+
+
+function checkPrimeNumber(number) {
+    if (number < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+function createPrimeNumbersList(number) {
+    const prime_numbers = [];
+    for (let i = 2; i < number; i++) {
+        if (checkPrimeNumber(i)) {
+            prime_numbers.push(i);
+        }
+    }
+    return prime_numbers;
+}
 
 
 //6. Faça um programa que solicite ao usuário um número e exiba a sequência de Fibonacci até o número informado utilizando um laço de repetição.
+function fibonacci() {
+    const number = parseInt(prompt("Digite um número: "), 10);
+    let fibSequence = [0, 1];
+    let nextFib = 1;
+
+    while (nextFib <= number) {
+        fibSequence.push(nextFib);
+        nextFib = fibSequence[fibSequence.length - 1] + fibSequence[fibSequence.length - 2];
+    }
+
+    console.log(`Sequência de Fibonacci até ${number}: ${fibSequence.join(", ")}`);
+}
 
 
 //7. Escreva um programa que solicite ao usuário uma lista de números, até o usuário digitar o número zero, e exiba o maior e o menor número da lista.
+function checkNumberLength() {
+    let numbers = [];
+    let number;
+
+    // Solicita números ao usuário até que ele digite 0
+    do {
+        number = parseFloat(prompt("Digite um número (ou 0 para finalizar): "));
+        if (number !== 0) {
+            numbers.push(number);
+        }
+    } while (number !== 0);
+
+    // Verifica se a lista não está vazia
+    if (numbers.length > 0) {
+        const major_number = Math.max(...numbers);
+        const minor_number = Math.min(...numbers);
+
+        console.log(`Maior número: ${major_number}`);
+        console.log(`Menor número: ${minor_number}`);
+    } else {
+        console.log("Nenhum número foi inserido.");
+    }
+}
 
 
 //8. Escreva um programa que solicite ao usuário uma frase e exiba a quantidade de vogais na frase.
+function vogalCount() {
+    const phrase = prompt("Digite uma frase: ");
+    const vogals = ['a', 'e', 'i', 'o', 'u'];
+    let contador = 0;
+
+    phrase = phrase.toLowerCase();
+
+    for (let char of phrase) {
+        if (vogals.includes(char)) {
+            contador++;
+        }
+    }
+
+    const quantidadeVogals = contador
+
+    console.log(`A frase contém ${quantidadeVogals} vogal(is).`);
+}
 
 
 
@@ -146,16 +227,16 @@ function main() {
                 checkDay()
                 break;
             case 5:
-                checkPalindrome();
+                printPrimeNumbers();
                 break;
             case 6:
-                checkAnagram();
+                fibonacci();
                 break;
             case 7:
-                countBlankSpaces();
+                checkNumberLength();
                 break;
             case 8:
-                findLastName();
+                vogalCount();
                 break;
             default:
                 console.log('A questão '+ question +' não foi encontrada.\n\n\n')
