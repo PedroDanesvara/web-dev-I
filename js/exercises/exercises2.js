@@ -163,7 +163,6 @@ function checkNumberLength() {
     let numbers = [];
     let number;
 
-    // Solicita números ao usuário até que ele digite 0
     do {
         number = parseFloat(prompt("Digite um número (ou 0 para finalizar): "));
         if (number !== 0) {
@@ -171,7 +170,6 @@ function checkNumberLength() {
         }
     } while (number !== 0);
 
-    // Verifica se a lista não está vazia
     if (numbers.length > 0) {
         const major_number = Math.max(...numbers);
         const minor_number = Math.min(...numbers);
@@ -202,7 +200,6 @@ function vogalCount() {
 
     console.log(`A frase contém ${quantidadeVogals} vogal(is).`);
 }
-
 
 
 function main() {
